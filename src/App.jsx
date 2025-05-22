@@ -1,4 +1,4 @@
-import TaskAppWithReducer from "@/components/TaskAppWithReducer";
+import TaskAppWithImmerReducer from "@/components/TaskAppWithImmerReducer";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
       {/* <Scoreboard /> */}
       {/* <Messenger /> */}
       {/* <TaskApp /> */}
-      <TaskAppWithReducer />
+      {/* <TaskAppWithReducer /> */}
+      <TaskAppWithImmerReducer />
     </>
   );
 }
