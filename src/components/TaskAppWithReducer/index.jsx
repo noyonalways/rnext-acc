@@ -1,5 +1,5 @@
-import AddTask from "@/components/TaskApp/AddTask";
-import TaskList from "@/components/TaskApp/TaskList";
+import AddTask from "@/components/TaskAppWithReducer/AddTask";
+import TaskList from "@/components/TaskAppWithReducer/TaskList";
 import { initialTasks } from "@/data/tasks";
 import taskReducer from "@/reducers/taskReducer";
 import { getNextId } from "@/utils/getNextId";

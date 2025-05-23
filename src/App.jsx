@@ -1,4 +1,4 @@
-import Profile from "@/components/Profile";
+import TaskAppWithImmerReducerAndContext from "@/components/TaskAppWithImmerReducerAndContext";
 
 function App() {
   return (
@@ -16,7 +16,8 @@ function App() {
       {/* <TaskAppWithImmerReducer /> */}
       {/* <UnderStandContext /> */}
       {/* <UnderStandContext2 /> */}
-      <Profile />
+      {/* <Profile /> */}
+      <TaskAppWithImmerReducerAndContext />
     </>
   );
 }
