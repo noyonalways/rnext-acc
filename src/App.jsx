@@ -1,4 +1,4 @@
-import UnderStandContext from "@/components/UnderstandContext";
+import UnderStandContext2 from "@/components/UnderstandContext2";
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
       {/* <TaskApp /> */}
       {/* <TaskAppWithReducer /> */}
       {/* <TaskAppWithImmerReducer /> */}
-      <UnderStandContext />
+      {/* <UnderStandContext /> */}
+      <UnderStandContext2 />
     </>
   );
 }
