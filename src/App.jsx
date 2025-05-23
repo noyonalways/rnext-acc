@@ -1,4 +1,4 @@
-import TaskAppWithImmerReducer from "@/components/TaskAppWithImmerReducer";
+import UnderStandContext from "@/components/UnderstandContext";
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       {/* <Messenger /> */}
       {/* <TaskApp /> */}
       {/* <TaskAppWithReducer /> */}
-      <TaskAppWithImmerReducer />
+      {/* <TaskAppWithImmerReducer /> */}
+      <UnderStandContext />
     </>
   );
 }
