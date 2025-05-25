@@ -1,7 +1,10 @@
+import Stopwatch from "@/components/stop-watch";
+
 function App() {
   return (
     <>
-      <div>Hello World!</div>
+      {/* <Counter /> */}
+      <Stopwatch />
     </>
   );
 }
