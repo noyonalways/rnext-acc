@@ -1,4 +1,4 @@
-import ForwaredRefImperative from "@/components/forward-ref-imperative";
+import ToogleWithStateVsUseRef from "@/components/toggle-with-state-vs-use-ref";
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
       {/* <CatFriendsDynamic /> */}
       {/* <ForwaredRefUnderstand /> */}
       {/* <ForwaredRefUnderstandOld /> */}
-      <ForwaredRefImperative />
+      {/* <ForwaredRefImperative /> */}
+      <ToogleWithStateVsUseRef />
     </>
   );
 }
