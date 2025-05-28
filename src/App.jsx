@@ -1,3 +1,5 @@
+import ForwaredRefImperative from "@/components/forward-ref-imperative";
+
 function App() {
   return (
     <>
@@ -9,6 +11,7 @@ function App() {
       {/* <CatFriendsDynamic /> */}
       {/* <ForwaredRefUnderstand /> */}
       {/* <ForwaredRefUnderstandOld /> */}
+      <ForwaredRefImperative />
     </>
   );
 }
