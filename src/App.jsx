@@ -1,10 +1,14 @@
-import Stopwatch from "@/components/stop-watch";
-
 function App() {
   return (
     <>
       {/* <Counter /> */}
-      <Stopwatch />
+      {/* <Stopwatch /> */}
+      {/* <StopwatchEnhanched /> */}
+      {/* <InputFocus /> */}
+      {/* <CatFriends /> */}
+      {/* <CatFriendsDynamic /> */}
+      {/* <ForwaredRefUnderstand /> */}
+      {/* <ForwaredRefUnderstandOld /> */}
     </>
   );
 }

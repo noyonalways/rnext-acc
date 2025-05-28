@@ -1,0 +1,92 @@
+import { useRef, useState } from "react";
+
+export default function StopwatchEnhanched() {
+  const [startTime, setStartTime] = useState(null);
+  const [now, setNow] = useState(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const [pausedTime, setPausedTime] = useState(0);
+  const intervalRef = useRef(null);
+
+  function handleStart() {
+    setStartTime(Date.now() - pausedTime);
+    setNow(Date.now());
+    setIsPaused(false);
+
+    clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
+      setNow(Date.now());
+    }, 10);
+  }
+
+  function handlePause() {
+    clearInterval(intervalRef.current);
+    setIsPaused(true);
+    setPausedTime(now - startTime);
+  }
+
+  function handleResume() {
+    if (isPaused) {
+      setStartTime(Date.now() - pausedTime);
+      setNow(Date.now());
+      setIsPaused(false);
+
+      intervalRef.current = setInterval(() => {
+        setNow(Date.now());
+      }, 10);
+    }
+  }
+
+  function handleReset() {
+    clearInterval(intervalRef.current);
+    setStartTime(null);
+    setNow(null);
+    setIsPaused(false);
+    setPausedTime(0);
+  }
+
+  let secondsPassed = 0;
+  if (startTime != null && now != null) {
+    secondsPassed = (now - startTime) / 1000;
+  }
+
+  return (
+    <div className="mx-auto mt-10 w-full max-w-2xl rounded border p-4">
+      <h1 className="mb-6 text-center text-4xl font-bold">Stop Watch</h1>
+      <h2 className="mb-4 text-center text-2xl font-bold">
+        Time passed: {secondsPassed.toFixed(3)}
+      </h2>
+      <div className="flex items-center justify-center space-x-2">
+        {!startTime && (
+          <button
+            className="cursor-pointer rounded bg-gray-200 px-4 py-1.5"
+            onClick={handleStart}
+          >
+            Start
+          </button>
+        )}
+        {startTime && !isPaused && (
+          <button
+            className="cursor-pointer rounded bg-gray-200 px-4 py-1.5"
+            onClick={handlePause}
+          >
+            Pause
+          </button>
+        )}
+        {isPaused && (
+          <button
+            className="cursor-pointer rounded bg-gray-200 px-4 py-1.5"
+            onClick={handleResume}
+          >
+            Resume
+          </button>
+        )}
+        <button
+          className="cursor-pointer rounded bg-gray-200 px-4 py-1.5"
+          onClick={handleReset}
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+  );
+}
