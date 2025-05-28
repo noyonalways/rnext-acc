@@ -58,6 +58,13 @@ Enhanced Version:
 - State management for controlled components
 - Performance considerations in DOM updates
 
+### 8. Understanding React State Batching and flushSync
+- React's default batching behavior for state updates
+- Cases where batched updates can cause synchronization issues
+- Using `flushSync` for immediate DOM updates
+- Performance implications of synchronous updates
+- Proper timing of DOM manipulations with state updates
+
 ## Key Learning Points
 
 1. **useRef Best Practices**
@@ -101,3 +108,17 @@ Enhanced Version:
    - Direct DOM manipulation considerations
    - Combining state and refs effectively
    - Understanding render cycles
+
+7. **State Batching and Synchronous Updates**
+   - Understanding React's state update batching
+   - When and how to use `flushSync`
+   - Balancing performance with immediate updates
+   - DOM synchronization strategies
+   - Managing scroll behavior with state updates
+
+8. **Advanced State Management**
+   - Coordinating state updates with DOM operations
+   - Handling edge cases in state updates
+   - Performance considerations with synchronous updates
+   - Best practices for state batching
+   - When to break out of default batching behavior

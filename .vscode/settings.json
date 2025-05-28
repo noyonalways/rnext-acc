@@ -15,5 +15,6 @@
   "javascript.suggest.autoImports": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
-  }
+  },
+  "editor.wordWrap": "on"
 }

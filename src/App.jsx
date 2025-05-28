@@ -1,4 +1,4 @@
-import ToogleWithStateVsUseRef from "@/components/toggle-with-state-vs-use-ref";
+import TodoListWithFlushSync from "@/components/todo-list-withflushSync";
 
 function App() {
   return (
@@ -12,7 +12,9 @@ function App() {
       {/* <ForwaredRefUnderstand /> */}
       {/* <ForwaredRefUnderstandOld /> */}
       {/* <ForwaredRefImperative /> */}
-      <ToogleWithStateVsUseRef />
+      {/* <ToogleWithStateVsUseRef /> */}
+      {/* <TodoList /> */}
+      <TodoListWithFlushSync />
     </>
   );
 }
