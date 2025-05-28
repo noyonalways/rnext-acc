@@ -122,3 +122,50 @@ Enhanced Version:
    - Performance considerations with synchronous updates
    - Best practices for state batching
    - When to break out of default batching behavior
+
+
+## Understanding React Effects
+
+### What are Effects?
+- Code that runs after rendering to synchronize with external systems
+- Different from event handlers which respond to specific user actions
+- Used for side effects caused by rendering itself
+- Runs at the end of commit after screen updates
+
+### Types of Component Logic
+1. **Rendering Code**
+   - Lives at the top level of components
+   - Transforms props and state into JSX
+   - Must be pure calculations
+   - No side effects allowed
+
+2. **Event Handlers**
+   - Nested functions responding to specific user actions
+   - Can contain side effects (state changes, API calls)
+   - Triggered by particular interactions
+   - Example: Submitting forms, updating input fields
+
+3. **Effects**
+   - Synchronize with external systems
+   - Run after rendering
+   - Not tied to specific user actions
+   - Example: Setting up server connections, third-party integrations
+
+### When to Use Effects
+- Connecting to external APIs or services
+- Setting up subscriptions or connections
+- Integrating with non-React widgets
+- Synchronizing with browser APIs
+
+### When Not to Use Effects
+- For state updates based on other state
+- For calculations that can be done during rendering
+- For handling user events
+- When direct event handlers can be used instead
+
+### Key Considerations
+- Effects run after the screen updates
+- Used for synchronization, not direct updates
+- Should be used sparingly
+- Consider alternatives before adding Effects
+- Focus on external system synchronization
