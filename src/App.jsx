@@ -1,4 +1,4 @@
-import TodoListWithFlushSync from "@/components/todo-list-withflushSync";
+import ChatRoom from "@/components/understand-useeffect/chat-room";
 
 function App() {
   return (
@@ -14,7 +14,9 @@ function App() {
       {/* <ForwaredRefImperative /> */}
       {/* <ToogleWithStateVsUseRef /> */}
       {/* <TodoList /> */}
-      <TodoListWithFlushSync />
+      {/* <TodoListWithFlushSync /> */}
+      {/* <UnderstandUseEffect /> */}
+      <ChatRoom />
     </>
   );
 }

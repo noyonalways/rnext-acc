@@ -151,6 +151,28 @@ Enhanced Version:
    - Not tied to specific user actions
    - Example: Setting up server connections, third-party integrations
 
+### Practical Example: Chat Room Connection
+
+Here's a practical example of using Effects to manage a chat room connection:
+
+```jsx
+import { useEffect } from 'react';
+
+const ChatRoom = () => {
+  useEffect(() => {
+    const connection = createConnection();
+    connection.connect();
+
+    // Cleanup function runs before component unmounts
+    return () => {
+      connection.disconnect();
+    };
+  }, []); // Empty dependency array means effect runs once on mount
+
+  return <h1>Welcome to the chat!</h1>;
+};
+```
+
 ### When to Use Effects
 - Connecting to external APIs or services
 - Setting up subscriptions or connections
