@@ -1,4 +1,4 @@
-import HandlingEffectTwice from "@/components/handling-effects-firing-twice-in-development";
+import FetchingData from "@/components/fetching-data";
 
 function App() {
   return (
@@ -17,7 +17,8 @@ function App() {
       {/* <TodoListWithFlushSync /> */}
       {/* <UnderstandUseEffect /> */}
       {/* <ChatRoom /> */}
-      <HandlingEffectTwice />
+      {/* <HandlingEffectTwice /> */}
+      <FetchingData />
     </>
   );
 }
