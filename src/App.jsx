@@ -1,4 +1,4 @@
-import ChatRoom from "@/components/understand-useeffect/chat-room";
+import HandlingEffectTwice from "@/components/handling-effects-firing-twice-in-development";
 
 function App() {
   return (
@@ -16,7 +16,8 @@ function App() {
       {/* <TodoList /> */}
       {/* <TodoListWithFlushSync /> */}
       {/* <UnderstandUseEffect /> */}
-      <ChatRoom />
+      {/* <ChatRoom /> */}
+      <HandlingEffectTwice />
     </>
   );
 }

@@ -16,5 +16,6 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
   },
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "cSpell.words": ["adipisci", "adipisicing", "amet", "aspernatur", "elit"]
 }
