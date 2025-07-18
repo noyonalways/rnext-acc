@@ -1,4 +1,4 @@
-import FetchingData from "@/components/fetching-data";
+import PuttingItAllTogether from "@/components/putting-it-all-together";
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
       {/* <UnderstandUseEffect /> */}
       {/* <ChatRoom /> */}
       {/* <HandlingEffectTwice /> */}
-      <FetchingData />
+      {/* <FetchingData /> */}
+      <PuttingItAllTogether />
     </>
   );
 }
