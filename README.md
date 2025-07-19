@@ -1,5 +1,23 @@
 # Module 4 - Part 1 Advanced React: Escape Hatches
 
+## Topics
+
+- 4.1 Referencing Values with Refs
+- 4.2 Manipulating the DOM with Refs - Getting a ref to the node
+- 4.3 Manipulating the DOM with Refs - Accessing another component’s DOM nodes
+- 4.4 Exposing a subnet of the API with an imperative handle
+- 4.5 When React attaches the refs & Best practices for DOM manipulations with Refs
+- 4.6 Flushing state updates synchronously with flushSync
+- 4.7 Synchronizing with Effects - Overview of Effect vs Event
+- 4.8 Synchronizing with Effects - How to write an Effect
+- 4.9 Synchronizing with Effects - Handling effects firing twice in development
+- 4.10 Synchronizing with Effect - Fetching Data
+- 4.11 Synchronizing with Effects - Putting it all together in one example
+- 4.12 You Might Not Need an Effect - Initial three examples
+- 4.13 You Might Not Need an Effect - Three more examples
+- 4.14 You Might Not Need an Effect - More examples
+- 4.15 You Might Not Need an Effect - Fetching data - Avoid Race Condition
+
 ## React useRef Hook Practices
 
 ### 1. Basic Counter with useRef
