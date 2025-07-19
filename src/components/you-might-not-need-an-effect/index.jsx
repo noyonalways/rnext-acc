@@ -1,7 +1,11 @@
 // import { useState } from "react";
 // import Example1 from "./example-1";
 // import Example2 from "./example-2";
-import Example4 from "./example-4";
+// import Example3 from "./example-3";
+// import Example4 from "./example-4";
+// import Example5 from "./example-5";
+
+import Example6 from "./example-6";
 
 const YouMightNotNeedAnEffect = () => {
   // const [userId, setUserId] = useState(1);
@@ -41,7 +45,13 @@ const YouMightNotNeedAnEffect = () => {
       <Example3 items={items} /> */}
 
       {/* Example 4 */}
-      <Example4 />
+      {/* <Example4 /> */}
+
+      {/* Example 5 */}
+      {/* <Example5 /> */}
+
+      {/* Example 6 */}
+      <Example6 />
     </div>
   );
 };
