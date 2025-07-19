@@ -1,14 +1,11 @@
 // import { useState } from "react";
 // import Example1 from "./example-1";
 // import Example2 from "./example-2";
-
-import { items1, items2 } from "@/data/items-data";
-import { useState } from "react";
-import Example3 from "./example-3";
+import Example4 from "./example-4";
 
 const YouMightNotNeedAnEffect = () => {
   // const [userId, setUserId] = useState(1);
-  const [items, setItems] = useState(items1);
+  // const [items, setItems] = useState(items1);
 
   return (
     <div>
@@ -27,13 +24,13 @@ const YouMightNotNeedAnEffect = () => {
       <Example2 key={userId} userId={userId} /> */}
 
       {/* Example 3: Updating state based on props or state */}
-      <div className="m-4 flex space-x-1">
+      {/* <div className="m-4 flex space-x-1">
         <button
           className="rounded-md bg-blue-500 px-4 py-2 text-white transition-colors duration-200 hover:bg-blue-600"
           onClick={() => setItems(items2)}
         >
           Switch to Items2
-        </button>{" "}
+        </button>
         <button
           className="rounded-md bg-blue-500 px-4 py-2 text-white transition-colors duration-200 hover:bg-blue-600"
           onClick={() => setItems(items1)}
@@ -41,7 +38,10 @@ const YouMightNotNeedAnEffect = () => {
           Switch to Items1
         </button>
       </div>
-      <Example3 items={items} />
+      <Example3 items={items} /> */}
+
+      {/* Example 4 */}
+      <Example4 />
     </div>
   );
 };
