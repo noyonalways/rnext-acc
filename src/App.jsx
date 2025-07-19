@@ -1,4 +1,4 @@
-import PuttingItAllTogether from "@/components/putting-it-all-together";
+import YouMightNotNeedAnEffect from "@/components/you-might-not-need-an-effect";
 
 function App() {
   return (
@@ -19,7 +19,8 @@ function App() {
       {/* <ChatRoom /> */}
       {/* <HandlingEffectTwice /> */}
       {/* <FetchingData /> */}
-      <PuttingItAllTogether />
+      {/* <PuttingItAllTogether /> */}
+      <YouMightNotNeedAnEffect />
     </>
   );
 }

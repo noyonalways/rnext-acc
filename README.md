@@ -59,6 +59,7 @@ Enhanced Version:
 - Performance considerations in DOM updates
 
 ### 8. Understanding React State Batching and flushSync
+
 - React's default batching behavior for state updates
 - Cases where batched updates can cause synchronization issues
 - Using `flushSync` for immediate DOM updates
@@ -104,12 +105,14 @@ Enhanced Version:
    - Selective method exposure
 
 6. **DOM Manipulation Strategies**
+
    - State-based vs ref-based updates
    - Direct DOM manipulation considerations
    - Combining state and refs effectively
    - Understanding render cycles
 
 7. **State Batching and Synchronous Updates**
+
    - Understanding React's state update batching
    - When and how to use `flushSync`
    - Balancing performance with immediate updates
@@ -123,23 +126,26 @@ Enhanced Version:
    - Best practices for state batching
    - When to break out of default batching behavior
 
-
 ## Understanding React Effects
 
 ### What are Effects?
+
 - Code that runs after rendering to synchronize with external systems
 - Different from event handlers which respond to specific user actions
 - Used for side effects caused by rendering itself
 - Runs at the end of commit after screen updates
 
 ### Types of Component Logic
+
 1. **Rendering Code**
+
    - Lives at the top level of components
    - Transforms props and state into JSX
    - Must be pure calculations
    - No side effects allowed
 
 2. **Event Handlers**
+
    - Nested functions responding to specific user actions
    - Can contain side effects (state changes, API calls)
    - Triggered by particular interactions
@@ -156,7 +162,7 @@ Enhanced Version:
 Here's a practical example of using Effects to manage a chat room connection:
 
 ```jsx
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const ChatRoom = () => {
   useEffect(() => {
@@ -174,20 +180,61 @@ const ChatRoom = () => {
 ```
 
 ### When to Use Effects
+
 - Connecting to external APIs or services
 - Setting up subscriptions or connections
 - Integrating with non-React widgets
 - Synchronizing with browser APIs
 
 ### When Not to Use Effects
+
 - For state updates based on other state
 - For calculations that can be done during rendering
 - For handling user events
 - When direct event handlers can be used instead
 
 ### Key Considerations
+
 - Effects run after the screen updates
 - Used for synchronization, not direct updates
 - Should be used sparingly
 - Consider alternatives before adding Effects
 - Focus on external system synchronization
+
+### You Might Not Need an Effect: Learning from Examples
+
+1. **Transforming Data (Example 1)**
+
+   - Transform data during rendering instead of Effects
+   - Calculate derived values directly in component body
+   - Use regular variables for simple transformations
+   - Keep data transformations pure and synchronous
+
+2. **Caching Expensive Calculations (Example 2)**
+
+   - Use useMemo instead of Effects for expensive calculations
+   - Cache values that are computationally intensive
+   - Optimize performance without side effects
+   - Maintain referential equality when needed
+
+3. **Resetting State on Prop Change (Example 3)**
+
+   - Reset state directly in event handlers
+   - Use key prop for full component reset
+   - Avoid Effects for prop-dependent state updates
+   - Handle state resets synchronously with changes
+
+4. **Common Alternatives to Effects**
+
+   - Direct event handlers
+   - Render-time calculations
+   - useMemo for expensive computations
+   - Key prop for component resets
+   - State updates in response to events
+
+5. **When to Choose Alternatives**
+   - When logic is synchronous
+   - For data transformations
+   - During user interactions
+   - For performance optimization
+   - When managing internal state
