@@ -4,8 +4,12 @@
 // import Example3 from "./example-3";
 // import Example4 from "./example-4";
 // import Example5 from "./example-5";
-
-import Example6 from "./example-6";
+// import Example6 from "./example-6";
+// import Example7 from "./example-7";
+// import Example8 from "./example-8";
+// import Example9 from "./example-9";
+// import Example10 from "./example-10";
+import OnlineIndicator from "./example-11";
 
 const YouMightNotNeedAnEffect = () => {
   // const [userId, setUserId] = useState(1);
@@ -51,7 +55,22 @@ const YouMightNotNeedAnEffect = () => {
       {/* <Example5 /> */}
 
       {/* Example 6 */}
-      <Example6 />
+      {/* <Example6 /> */}
+
+      {/* Example 7 */}
+      {/* <Example7 /> */}
+
+      {/* Example 8 */}
+      {/* <Example8 /> */}
+
+      {/* Example 9 */}
+      {/* <Example9 /> */}
+
+      {/* Example 10 */}
+      {/* <Example10 /> */}
+
+      {/* Example 11 */}
+      <OnlineIndicator />
     </div>
   );
 };
