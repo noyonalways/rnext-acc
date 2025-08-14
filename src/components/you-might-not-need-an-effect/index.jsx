@@ -9,7 +9,8 @@
 // import Example8 from "./example-8";
 // import Example9 from "./example-9";
 // import Example10 from "./example-10";
-import OnlineIndicator from "./example-11";
+// import OnlineIndicator from "./example-11";
+import SearchResults from "./example-12";
 
 const YouMightNotNeedAnEffect = () => {
   // const [userId, setUserId] = useState(1);
@@ -70,7 +71,10 @@ const YouMightNotNeedAnEffect = () => {
       {/* <Example10 /> */}
 
       {/* Example 11 */}
-      <OnlineIndicator />
+      {/* <OnlineIndicator /> */}
+
+      {/* Example 12 */}
+      <SearchResults />
     </div>
   );
 };
