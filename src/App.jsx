@@ -1,4 +1,4 @@
-import YouMightNotNeedAnEffect from "@/components/you-might-not-need-an-effect";
+import ChatApp from "@/components/chat-app";
 
 function App() {
   return (
@@ -20,7 +20,8 @@ function App() {
       {/* <HandlingEffectTwice /> */}
       {/* <FetchingData /> */}
       {/* <PuttingItAllTogether /> */}
-      <YouMightNotNeedAnEffect />
+      {/* <YouMightNotNeedAnEffect /> */}
+      <ChatApp />
     </>
   );
 }
