@@ -15,5 +15,9 @@
   "javascript.suggest.autoImports": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
-  }
+  },
+  "cSpell.words": [
+    "Noyon",
+    "Rahman"
+  ]
 }

@@ -1,0 +1,14 @@
+{
+  "name": "tanstack-query-cc-server",
+  "version": "1.0.0",
+  "description": "This is the mock api server",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch database/data.json --port 5000"
+  },
+  "author": "Noyon Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
