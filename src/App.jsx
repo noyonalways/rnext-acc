@@ -1,18 +1,8 @@
-import TaskAppWithReducer from "@/components/TaskAppWithReducer";
 
 function App() {
   return (
     <>
-      {/* <Form /> */}
-      {/* <Pointer /> */}
-      {/* <FeedbackForm /> */}
-      {/* <TravelPlan /> */}
-      {/* <TravelPlanNormalized /> */}
-      {/* <Accordion /> */}
-      {/* <Scoreboard /> */}
-      {/* <Messenger /> */}
-      {/* <TaskApp /> */}
-      <TaskAppWithReducer />
+      <h1>Hello World</h1>
     </>
   );
 }
