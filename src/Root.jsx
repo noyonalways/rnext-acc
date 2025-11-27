@@ -9,6 +9,7 @@ import {
 export default function Root() {
   const { contacts } = useLoaderData();
   const navigation = useNavigation();
+
   return (
     <>
       <div id="sidebar">
