@@ -11,8 +11,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "javascript.preferences.importModuleSpecifier": "non-relative",
-  "javascript.suggest.autoImports": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
   },
