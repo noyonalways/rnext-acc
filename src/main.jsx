@@ -3,8 +3,9 @@ import {
   destroyContactAction,
   editContactAction,
 } from "@/actions/contact";
+import Index from "@/Index";
 import { getContactLoader, getContactsLoader } from "@/loaders/contact";
-import { Contact, EditContact, ErrorPage } from "@/pages";
+import { ContactPage, EditContactPage, ErrorPage } from "@/pages";
 import Root from "@/Root";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -19,14 +20,15 @@ const router = createBrowserRouter([
     loader: getContactsLoader,
     action: createContactAction,
     children: [
+      { index: true, element: <Index /> },
       {
         path: "contacts/:contactId",
-        element: <Contact />,
+        element: <ContactPage />,
         loader: getContactLoader,
       },
       {
         path: "contacts/:contactId/edit",
-        element: <EditContact />,
+        element: <EditContactPage />,
         loader: getContactLoader,
         action: editContactAction,
       },
