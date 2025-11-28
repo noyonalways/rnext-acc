@@ -3,7 +3,7 @@ import { redirect } from "react-router-dom";
 
 export async function createContactAction() {
   const contact = await createContact();
-  return { contact };
+  return redirect(`/contacts/${contact.id}/edit`);
 }
 
 export async function editContactAction({ request, params }) {
@@ -16,4 +16,11 @@ export async function editContactAction({ request, params }) {
 export async function destroyContactAction({ params }) {
   await deleteContact(params.contactId);
   return redirect("/");
+}
+
+export async function favoriteContactAction({ request, params }) {
+  const formData = await request.formData();
+  return updateContact(params.contactId, {
+    favorite: formData.get("favorite") === "true",
+  });
 }

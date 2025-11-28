@@ -2,6 +2,7 @@ import {
   createContactAction,
   destroyContactAction,
   editContactAction,
+  favoriteContactAction,
 } from "@/actions/contact";
 import Index from "@/Index";
 import { getContactLoader, getContactsLoader } from "@/loaders/contact";
@@ -20,22 +21,28 @@ const router = createBrowserRouter([
     loader: getContactsLoader,
     action: createContactAction,
     children: [
-      { index: true, element: <Index /> },
       {
-        path: "contacts/:contactId",
-        element: <ContactPage />,
-        loader: getContactLoader,
-      },
-      {
-        path: "contacts/:contactId/edit",
-        element: <EditContactPage />,
-        loader: getContactLoader,
-        action: editContactAction,
-      },
-      {
-        path: "contacts/:contactId/destroy",
-        action: destroyContactAction,
-        errorElement: <div>Oops! There was an error.</div>,
+        errorElement: <ErrorPage />,
+        children: [
+          { index: true, element: <Index /> },
+          {
+            path: "contacts/:contactId",
+            element: <ContactPage />,
+            loader: getContactLoader,
+            action: favoriteContactAction,
+          },
+          {
+            path: "contacts/:contactId/edit",
+            element: <EditContactPage />,
+            loader: getContactLoader,
+            action: editContactAction,
+          },
+          {
+            path: "contacts/:contactId/destroy",
+            action: destroyContactAction,
+            errorElement: <div>Oops! There was an error.</div>,
+          },
+        ],
       },
     ],
   },
