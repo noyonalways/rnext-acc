@@ -12,6 +12,9 @@ export default function Home() {
             <li>
               <Link href="/parallel-routes">Parallel Routes</Link>
             </li>
+            <li>
+              <Link href="/gallery">Image Gallery</Link>
+            </li>
           </ul>
         </nav>
       </header>
